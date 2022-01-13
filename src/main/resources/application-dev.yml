@@ -1,0 +1,18 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    show-sql: false
+  datasource:
+    url: jdbc:postgresql://localhost:5432/animes
+    username: postgres
+    password: root
+  h2:
+    console:
+      enabled: false
+      path: /h2-console
+  devtools:
+    restart:
+      poll-interval: 2s
+      quiet-period: 1s

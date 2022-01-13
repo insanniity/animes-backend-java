@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: ${APP_PROFILE:test}
+  jpa:
+    open-in-view: false
+  data:
+    web:
+      pageable:
+        page-parameter: page
+        size-parameter: size
+        one-indexed-parameters: true
+        default-page-size: 50
+      sort:
+        sort-parameter: sort
+server:
+  port: ${SERVER_PORT:8080}
+  servlet:
+    context-path: /api/v1
