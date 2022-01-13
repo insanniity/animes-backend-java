@@ -1,3 +1,8 @@
 spring:
   datasource:
     url: ${DATABASE_URL}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    show-sql: false
