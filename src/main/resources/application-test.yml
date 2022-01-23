@@ -12,7 +12,7 @@ spring:
       poll-interval: 5s
       quiet-period: 1s
   jpa:
-    show-sql: true
+    show-sql: false
     roperties:
       hibernate:
         format_sql: true
