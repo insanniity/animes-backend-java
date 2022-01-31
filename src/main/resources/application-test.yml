@@ -16,3 +16,11 @@ spring:
     roperties:
       hibernate:
         format_sql: true
+security:
+  oauth2:
+    client:
+      client-id: animes
+      client-secret: animes123
+jwt:
+  secret: MY-JWT-SECRET
+  duration: 86400
