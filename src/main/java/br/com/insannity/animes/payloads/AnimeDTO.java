@@ -1,15 +1,13 @@
 package br.com.insannity.animes.payloads;
 
 import br.com.insannity.animes.entities.Anime;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
+@Builder
 public class AnimeDTO {
 
     private Long id;

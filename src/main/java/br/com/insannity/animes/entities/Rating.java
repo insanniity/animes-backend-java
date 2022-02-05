@@ -11,6 +11,8 @@ import lombok.*;
 @Getter
 @Setter
 @Entity
+@EqualsAndHashCode
+@ToString
 @Table(name = "tb_ratings")
 public class Rating {
 

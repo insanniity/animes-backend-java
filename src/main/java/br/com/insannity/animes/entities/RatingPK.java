@@ -12,6 +12,8 @@ import lombok.*;
 @AllArgsConstructor
 @Getter
 @Setter
+@EqualsAndHashCode
+@ToString
 @Embeddable
 public class RatingPK implements Serializable{
     
