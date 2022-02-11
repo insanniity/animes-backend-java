@@ -29,7 +29,6 @@ public class User implements UserDetails {
     @Column(unique = true)
     private String email;
     private String password;
-    @Setter(value= AccessLevel.PROTECTED)
     @OneToOne
     private Role role;
 
