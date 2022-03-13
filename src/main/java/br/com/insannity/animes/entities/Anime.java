@@ -27,8 +27,8 @@ public class Anime {
     private Double rating;
     private Integer count;
 
-    @OneToMany(mappedBy = "id.anime", fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
     @Setter(AccessLevel.PROTECTED)
+    @OneToMany(mappedBy = "id.anime", orphanRemoval = true)
     private Set<Rating> ratings = new HashSet<>();
 
 

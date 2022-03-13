@@ -31,6 +31,7 @@ public class User implements UserDetails {
     private String password;
     @OneToOne
     private Role role;
+    private boolean ativo;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -61,7 +62,7 @@ public class User implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return true;
+        return ativo;
     }
 
 }

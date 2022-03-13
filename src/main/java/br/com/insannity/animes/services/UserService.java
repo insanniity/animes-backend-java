@@ -25,8 +25,12 @@ public class UserService implements UserServiceImpl {
     private RoleRepository roleRepository;
 
     @Transactional(readOnly = true)
-    public Page<UserDTO> findAll(Pageable pageable) {
-        return repository.findAll(pageable).map(UserDTO::new);
+    public Page<UserDTO> findAll(Pageable pageable, String role) {
+        if(role.isEmpty()){
+            return repository.findAll(pageable).map(UserDTO::new);
+        }else{
+            return repository.findByRoleAuthority(role, pageable).map(UserDTO::new);
+        }
     }
 
     @Transactional(readOnly = true)
@@ -65,7 +69,7 @@ public class UserService implements UserServiceImpl {
         user.setNome(userDTO.getNome());
         user.setEmail(userDTO.getEmail());
         user.setPassword(userDTO.getPassword());
-        user.setRole(roleRepository.getById(userDTO.getRole()));
+        user.setRole(roleRepository.findByAuthority(userDTO.getRole()));
     }
 
 

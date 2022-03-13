@@ -1,13 +1,13 @@
 INSERT INTO tb_roles(authority) VALUES ('ROLE_ADMIN');
 INSERT INTO tb_roles(authority) VALUES ('ROLE_USER');
 
-INSERT INTO tb_users(email, nome, password, role_id) VALUES ('admin@admin.com','Admin','$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG',  1);
+INSERT INTO tb_users(email, nome, password, role_id, ativo) VALUES ('admin@admin.com','Admin','$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG',  1, true);
 
-INSERT INTO tb_users(email, role_id) VALUES ('maria@gmail.com', 2);
-INSERT INTO tb_users(email, role_id) VALUES ('joao@gmail.com', 2);
-INSERT INTO tb_users(email, role_id) VALUES ('ana@gmail.com', 2);
-INSERT INTO tb_users(email, role_id) VALUES ('lucia@gmail.com', 2);
-INSERT INTO tb_users(email, role_id) VALUES ('joaquim@gmail.com', 2);
+INSERT INTO tb_users(email, role_id, ativo) VALUES ('maria@gmail.com', 2, true);
+INSERT INTO tb_users(email, role_id, ativo) VALUES ('joao@gmail.com', 2, true);
+INSERT INTO tb_users(email, role_id, ativo) VALUES ('ana@gmail.com', 2, true);
+INSERT INTO tb_users(email, role_id, ativo) VALUES ('lucia@gmail.com', 2, true);
+INSERT INTO tb_users(email, role_id, ativo) VALUES ('joaquim@gmail.com', 2, true);
 
 INSERT INTO tb_animes(rating, count, title, image, description) VALUES (4.5, 2, 'Demon Slayer: Kimetsu no Yaiba', 'https://beta.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f7adcedd1d7c53ae18d851003a3cfae4.jpeg', 'Japão, era Taisho. Tanjiro, um bondoso jovem que ganha a vida vendendo carvão, descobre que sua família foi massacrada por um demônio. E pra piorar, Nezuko, sua irmã mais nova e única sobrevivente, também foi transformada num demônio. Arrasado com esta sombria realidade, Tanjiro decide se tornar um matador de demônios para fazer sua irmã voltar a ser humana, e para matar o demônio que matou sua família. Um triste conto sobre dois irmãos, onde os destinos dos humanos e dos demônios se entrelaçam, começa agora.');
 INSERT INTO tb_animes(rating, count, title, image, description) VALUES (3.3, 3, 'ORIENT', 'https://beta.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/18f146b8a59b3379c68c208e84b29235.jpeg', 'Durante a Era dos Reinos Combatentes na terra de Hinomoto, todos os generais foram derrotados um a um pelos demoníacos Kishin, pondo um fim ao domínio da humanidade. Por 150 anos, indivíduos continuaram a resistir aos Kishin e buscar a liberdade, formando as chamadas Tropas Bushi. Quando jovem, Musashi e Kojiro sonhavam em formar a Tropa Bushi mais forte de todas - mas numa vila que idolatrava os Kishin, Tropas Bushi eram consideradas tabu. Mesmo contra todas as possibilidades, Musashi e Kojiro se unem contra as forças opressoras para um dia realizar seu sonho!');

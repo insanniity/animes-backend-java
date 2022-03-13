@@ -11,9 +11,9 @@ import lombok.*;
 @AllArgsConstructor
 @Getter
 @Setter
-@Entity
 @EqualsAndHashCode
 @ToString
+@Entity
 @Table(name = "tb_ratings")
 public class Rating {
 

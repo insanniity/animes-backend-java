@@ -8,7 +8,7 @@ spring:
       pageable:
         page-parameter: page
         size-parameter: size
-        one-indexed-parameters: true
+        one-indexed-parameters: false
         default-page-size: 50
       sort:
         sort-parameter: sort

@@ -19,13 +19,15 @@ public class UserDTO {
     @Email
     private String email;
     private String password;
-    private Long role;
+    private String role;
+    private boolean ativo;
 
     public UserDTO(User user) {
         this.id = user.getId();
         this.nome = user.getNome();
         this.email = user.getEmail();
-        this.role = user.getRole().getId();
+        this.role = user.getRole().getAuthority();
+        this.ativo = user.isAtivo();
     }
 
 

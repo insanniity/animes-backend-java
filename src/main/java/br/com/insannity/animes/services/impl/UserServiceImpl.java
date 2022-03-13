@@ -6,7 +6,7 @@ import org.springframework.data.domain.Pageable;
 
 public interface UserServiceImpl {
 
-    Page<UserDTO> findAll(Pageable pageable);
+    Page<UserDTO> findAll(Pageable pageable, String role);
     UserDTO save(UserDTO userDTO);
     UserDTO update(Long id, UserDTO userDTO);
     UserDTO findById(Long id);

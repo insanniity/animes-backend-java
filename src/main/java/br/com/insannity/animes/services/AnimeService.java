@@ -41,6 +41,8 @@ public class AnimeService implements AnimeServiceImpl {
     public AnimeDTO insertNew(AnimeDTO dto){
         Anime entity = new Anime();
         copyDotToEntity(dto, entity);
+        entity.setRating(0.0);
+        entity.setCount(0);
         entity = repository.save(entity);
         return new AnimeDTO(entity);
     }

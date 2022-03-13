@@ -18,8 +18,8 @@ public class UserController {
 
 
     @GetMapping
-    public ResponseEntity<Page<UserDTO>> getAll(Pageable pageable) {
-        return ResponseEntity.ok(service.findAll(pageable));
+    public ResponseEntity<Page<UserDTO>> getAll(Pageable pageable, @RequestParam(required = false) String role) {
+        return ResponseEntity.ok(service.findAll(pageable, role));
     }
 
     @GetMapping("/{id})")
